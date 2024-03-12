@@ -18,6 +18,8 @@
 		DDAE17D82B8D4CAD000EC9FE /* ConceptsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDAE17D72B8D4CAD000EC9FE /* ConceptsTests.swift */; };
 		DDAE17E22B8D4CAD000EC9FE /* ConceptsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDAE17E12B8D4CAD000EC9FE /* ConceptsUITests.swift */; };
 		DDAE17E42B8D4CAD000EC9FE /* ConceptsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDAE17E32B8D4CAD000EC9FE /* ConceptsUITestsLaunchTests.swift */; };
+		DDE2C5CE2BA1187100CB046A /* PhotoComp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDE2C5CD2BA1187100CB046A /* PhotoComp.swift */; };
+		DDE2C5D12BA11CA900CB046A /* CodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDE2C5D02BA11CA900CB046A /* CodeView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +54,8 @@
 		DDAE17DD2B8D4CAD000EC9FE /* ConceptsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ConceptsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DDAE17E12B8D4CAD000EC9FE /* ConceptsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConceptsUITests.swift; sourceTree = "<group>"; };
 		DDAE17E32B8D4CAD000EC9FE /* ConceptsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConceptsUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		DDE2C5CD2BA1187100CB046A /* PhotoComp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoComp.swift; sourceTree = "<group>"; };
+		DDE2C5D02BA11CA900CB046A /* CodeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,7 +108,9 @@
 			children = (
 				DDAE17C62B8D4CAC000EC9FE /* ConceptsApp.swift */,
 				DDAE17C82B8D4CAC000EC9FE /* ContentView.swift */,
+				DDE2C5CF2BA11C7D00CB046A /* Utilities */,
 				A404BB3A2B9C19DC00D2BED9 /* ConceptsModel.swift */,
+				DDE2C5CC2BA1185600CB046A /* Models */,
 				A404BB3C2B9C1EF000D2BED9 /* ConceptsRowView.swift */,
 				A404BB3E2B9C2CC200D2BED9 /* ConceptsListView.swift */,
 				A404BB402B9C375500D2BED9 /* ConceptsListDetailView.swift */,
@@ -137,6 +143,22 @@
 				DDAE17E32B8D4CAD000EC9FE /* ConceptsUITestsLaunchTests.swift */,
 			);
 			path = ConceptsUITests;
+			sourceTree = "<group>";
+		};
+		DDE2C5CC2BA1185600CB046A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				DDE2C5CD2BA1187100CB046A /* PhotoComp.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		DDE2C5CF2BA11C7D00CB046A /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				DDE2C5D02BA11CA900CB046A /* CodeView.swift */,
+			);
+			path = Utilities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -273,8 +295,10 @@
 				DDAE17C92B8D4CAC000EC9FE /* ContentView.swift in Sources */,
 				A404BB3B2B9C19DC00D2BED9 /* ConceptsModel.swift in Sources */,
 				A404BB3D2B9C1EF000D2BED9 /* ConceptsRowView.swift in Sources */,
+				DDE2C5CE2BA1187100CB046A /* PhotoComp.swift in Sources */,
 				A404BB3F2B9C2CC200D2BED9 /* ConceptsListView.swift in Sources */,
 				DDAE17C72B8D4CAC000EC9FE /* ConceptsApp.swift in Sources */,
+				DDE2C5D12BA11CA900CB046A /* CodeView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
