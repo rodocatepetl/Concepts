@@ -83,6 +83,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DD411B062BA3A5B7001AAA76 /* ConceptsList */ = {
+			isa = PBXGroup;
+			children = (
+				A404BB3C2B9C1EF000D2BED9 /* ConceptsRowView.swift */,
+				A404BB3E2B9C2CC200D2BED9 /* ConceptsListView.swift */,
+				A404BB402B9C375500D2BED9 /* ConceptsListDetailView.swift */,
+				A404BB3A2B9C19DC00D2BED9 /* ConceptsModel.swift */,
+			);
+			path = ConceptsList;
+			sourceTree = "<group>";
+		};
 		DDAE17BA2B8D4CAC000EC9FE = {
 			isa = PBXGroup;
 			children = (
@@ -109,11 +120,8 @@
 				DDAE17C62B8D4CAC000EC9FE /* ConceptsApp.swift */,
 				DDAE17C82B8D4CAC000EC9FE /* ContentView.swift */,
 				DDE2C5CF2BA11C7D00CB046A /* Utilities */,
-				A404BB3A2B9C19DC00D2BED9 /* ConceptsModel.swift */,
 				DDE2C5CC2BA1185600CB046A /* Models */,
-				A404BB3C2B9C1EF000D2BED9 /* ConceptsRowView.swift */,
-				A404BB3E2B9C2CC200D2BED9 /* ConceptsListView.swift */,
-				A404BB402B9C375500D2BED9 /* ConceptsListDetailView.swift */,
+				DD411B062BA3A5B7001AAA76 /* ConceptsList */,
 				DDAE17CA2B8D4CAD000EC9FE /* Assets.xcassets */,
 				DDAE17CC2B8D4CAD000EC9FE /* Preview Content */,
 			);
