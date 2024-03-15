@@ -9,17 +9,20 @@ import SwiftUI
 
 struct ConceptsRowView: View {
     
-    var concepts: Concepts
+    var composition: PhotoComp
     
     var body: some View {
         HStack {
-            concepts.icon
+            Image(composition.overlay.randomElement() ?? "")
                 .resizable()
-                .frame (width: 20, height: 20)
-                .padding (10)
+                .scaledToFill()
+                .background(Color.blue.opacity(0.8))
+                .frame(width: 30, height: 30)
+                .cornerRadius(15)
+                .clipped()
+                .padding(.leading)
             
-            Text (concepts.name)
-                    .padding(10)
+            Text (composition.nombre)
             
             Spacer()
         }
@@ -28,5 +31,10 @@ struct ConceptsRowView: View {
 
 struct ConceptsRowView_Previews: PreviewProvider {
     static var previews: some View {
-        ConceptsRowView (concepts: Concepts (id: 1, name: "Tres cuartos", icon: Image(systemName: "star"), description: "tipo de concepto utilizado...", history: "creado en 1980...", overlay: Image(systemName:"star") ))}
+            if let composition = CompositionManager.shared.compositions.randomElement() {
+                return AnyView(ConceptsRowView(composition: composition))
+            } else {
+                return AnyView(EmptyView())
+            }
+        }
 }
