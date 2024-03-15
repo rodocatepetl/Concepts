@@ -13,13 +13,16 @@ struct ConceptsRowView: View {
     
     var body: some View {
         HStack {
-            Image(composition.icon)
+            Image(composition.overlay.randomElement() ?? "")
                 .resizable()
-                .frame (width: 20, height: 20)
-                .padding (10)
+                .scaledToFill()
+                .background(Color.blue.opacity(0.8))
+                .frame(width: 30, height: 30)
+                .cornerRadius(15)
+                .clipped()
+                .padding(.leading)
             
             Text (composition.nombre)
-                    .padding(10)
             
             Spacer()
         }
@@ -29,7 +32,7 @@ struct ConceptsRowView: View {
 struct ConceptsRowView_Previews: PreviewProvider {
     static var previews: some View {
             if let composition = CompositionManager.shared.compositions.randomElement() {
-                return AnyView(PhotoCompDetailView(photoComp: composition))
+                return AnyView(ConceptsRowView(composition: composition))
             } else {
                 return AnyView(EmptyView())
             }
