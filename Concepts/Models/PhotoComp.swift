@@ -14,13 +14,13 @@ struct PhotoComp: Identifiable, Codable {
     var historia: String
     var teoria: String
     var ejemplos: [String]  // Nombres de archivo de imagen para los ejemplos
-    var overlay: String     // Nombre de archivo de imagen para el overlay
+    var overlay: [String]     // Nombre de archivo de imagen para el overlay
     var icon: String        // Nombre de archivo de imagen para el ícono
     
     // MARK: - Solo para mostrar el uso (Ejemplos)
     fileprivate static let examples = [
-        PhotoComp(nombre: "Regla de Tercios", detalle: "Divide el marco en tres partes horizontales y verticales.", historia: "Historia de la regla de tercios...", teoria: "Teoría de la regla de tercios...", ejemplos: ["ejemplo1.jpg"], overlay: "overlay1.jpg", icon: "icon1.jpg"),
-        PhotoComp(nombre: "Marco Natural", detalle: "Utiliza elementos naturales como árboles para enmarcar.", historia: "Historia del marco natural...", teoria: "Teoría del marco natural...", ejemplos: ["ejemplo2.jpg"], overlay: "overlay2.jpg", icon: "icon2.jpg")
+        PhotoComp(nombre: "Regla de Tercios", detalle: "Divide el marco en tres partes horizontales y verticales.", historia: "Historia de la regla de tercios...", teoria: "Teoría de la regla de tercios...", ejemplos: ["ejemplo1.jpg"], overlay: ["overlay1.jpg"], icon: "icon1.jpg"),
+        PhotoComp(nombre: "Marco Natural", detalle: "Utiliza elementos naturales como árboles para enmarcar.", historia: "Historia del marco natural...", teoria: "Teoría del marco natural...", ejemplos: ["ejemplo2.jpg"], overlay: ["overlay2.jpg"], icon: "icon2.jpg")
     ]
 }
 
