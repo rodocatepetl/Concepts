@@ -8,6 +8,7 @@ struct PhotoCompDetailView: View {
             VStack(alignment: .leading, spacing: 10) {
                 Text(photoComp.nombre)
                     .font(.largeTitle)
+                    .fontWeight(.bold)
                     .padding(.top)
 
                 // ScrollView horizontal para los overlays
@@ -16,19 +17,24 @@ struct PhotoCompDetailView: View {
                         ForEach(photoComp.overlay, id: \.self) { overlay in
                             Image(overlay)
                                 .resizable()
-                                .scaledToFit().background(Color.gray.opacity(0.3))
-                                .frame(height: 200)
+                                .scaledToFit()
+                                .padding(.bottom)
+                                .background(Color.gray.opacity(0.3))
+                                .frame(height: 254.0)
                                 .cornerRadius(10)
                                 
                         }
                     }
                     .padding(.horizontal)
                 }
+                .padding(/*@START_MENU_TOKEN@*/.leading, -15.0/*@END_MENU_TOKEN@*/)
                 .frame(height: photoComp.overlay.count > 1 ? 200 : nil)
                 
                 // Descripción con palabras clave resaltadas
                 Text(photoComp.detalle)
+                    .multilineTextAlignment(.center)
                     .padding()
+                    .frame(width: /*@START_MENU_TOKEN@*/360.0/*@END_MENU_TOKEN@*/, height: /*@START_MENU_TOKEN@*/100.0/*@END_MENU_TOKEN@*/)
                     .background(Color.yellow)
                     .cornerRadius(10)
                 

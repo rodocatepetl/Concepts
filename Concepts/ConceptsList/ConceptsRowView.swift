@@ -16,13 +16,16 @@ struct ConceptsRowView: View {
             Image(composition.overlay.randomElement() ?? "")
                 .resizable()
                 .scaledToFill()
-                .background(Color.blue.opacity(0.8))
-                .frame(width: 30, height: 30)
-                .cornerRadius(15)
+                .background(Color.black.opacity(0.8))
+                .frame(width: 40.0, height: 40.0)
+                .cornerRadius(35)
                 .clipped()
-                .padding(.leading)
+                .padding(.horizontal, 8.0)
+                .padding(.vertical, 5.0)
             
-            Text (composition.nombre)
+                Text (composition.nombre)
+                .font(.title3)
+                .multilineTextAlignment(.leading)
             
             Spacer()
         }
