@@ -19,6 +19,10 @@
 		DDAE17D82B8D4CAD000EC9FE /* ConceptsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDAE17D72B8D4CAD000EC9FE /* ConceptsTests.swift */; };
 		DDAE17E22B8D4CAD000EC9FE /* ConceptsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDAE17E12B8D4CAD000EC9FE /* ConceptsUITests.swift */; };
 		DDAE17E42B8D4CAD000EC9FE /* ConceptsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDAE17E32B8D4CAD000EC9FE /* ConceptsUITestsLaunchTests.swift */; };
+		DDE204112BA8E56B00FE9216 /* OrientationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDE204102BA8E56B00FE9216 /* OrientationManager.swift */; };
+		DDE204132BA8E5D300FE9216 /* PhotoCompositionCameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDE204122BA8E5D300FE9216 /* PhotoCompositionCameraView.swift */; };
+		DDE204152BA8E5F500FE9216 /* CameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDE204142BA8E5F500FE9216 /* CameraView.swift */; };
+		DDE204192BA8F6E000FE9216 /* CameraAccessView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDE204182BA8F6E000FE9216 /* CameraAccessView.swift */; };
 		DDE2C5CE2BA1187100CB046A /* PhotoComp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDE2C5CD2BA1187100CB046A /* PhotoComp.swift */; };
 		DDE2C5D12BA11CA900CB046A /* CodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDE2C5D02BA11CA900CB046A /* CodeView.swift */; };
 /* End PBXBuildFile section */
@@ -56,6 +60,10 @@
 		DDAE17DD2B8D4CAD000EC9FE /* ConceptsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ConceptsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DDAE17E12B8D4CAD000EC9FE /* ConceptsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConceptsUITests.swift; sourceTree = "<group>"; };
 		DDAE17E32B8D4CAD000EC9FE /* ConceptsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConceptsUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		DDE204102BA8E56B00FE9216 /* OrientationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrientationManager.swift; sourceTree = "<group>"; };
+		DDE204122BA8E5D300FE9216 /* PhotoCompositionCameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCompositionCameraView.swift; sourceTree = "<group>"; };
+		DDE204142BA8E5F500FE9216 /* CameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraView.swift; sourceTree = "<group>"; };
+		DDE204182BA8F6E000FE9216 /* CameraAccessView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraAccessView.swift; sourceTree = "<group>"; };
 		DDE2C5CD2BA1187100CB046A /* PhotoComp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoComp.swift; sourceTree = "<group>"; };
 		DDE2C5D02BA11CA900CB046A /* CodeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -99,6 +107,7 @@
 			isa = PBXGroup;
 			children = (
 				DD411B082BA3A612001AAA76 /* PhotoCompDetailView.swift */,
+				DDE204122BA8E5D300FE9216 /* PhotoCompositionCameraView.swift */,
 			);
 			path = DetailView;
 			sourceTree = "<group>";
@@ -176,6 +185,9 @@
 			children = (
 				DDE2C5D02BA11CA900CB046A /* CodeView.swift */,
 				DD411B0C2BA41AAA001AAA76 /* CompositionManager.swift */,
+				DDE204102BA8E56B00FE9216 /* OrientationManager.swift */,
+				DDE204142BA8E5F500FE9216 /* CameraView.swift */,
+				DDE204182BA8F6E000FE9216 /* CameraAccessView.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -313,11 +325,15 @@
 				DDAE17C92B8D4CAC000EC9FE /* ContentView.swift in Sources */,
 				A404BB3B2B9C19DC00D2BED9 /* ConceptsModel.swift in Sources */,
 				A404BB3D2B9C1EF000D2BED9 /* ConceptsRowView.swift in Sources */,
+				DDE204152BA8E5F500FE9216 /* CameraView.swift in Sources */,
 				DDE2C5CE2BA1187100CB046A /* PhotoComp.swift in Sources */,
 				A404BB3F2B9C2CC200D2BED9 /* ConceptsListView.swift in Sources */,
 				DD411B092BA3A612001AAA76 /* PhotoCompDetailView.swift in Sources */,
 				DDAE17C72B8D4CAC000EC9FE /* ConceptsApp.swift in Sources */,
 				DD411B0D2BA41AAA001AAA76 /* CompositionManager.swift in Sources */,
+				DDE204112BA8E56B00FE9216 /* OrientationManager.swift in Sources */,
+				DDE204192BA8F6E000FE9216 /* CameraAccessView.swift in Sources */,
+				DDE204132BA8E5D300FE9216 /* PhotoCompositionCameraView.swift in Sources */,
 				DDE2C5D12BA11CA900CB046A /* CodeView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -405,6 +421,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = "$(SRCROOT)/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -459,6 +476,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = "$(SRCROOT)/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -480,11 +498,11 @@
 				DEVELOPMENT_TEAM = 7J77M7XTN8;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Necesitamos la camara para que puedas hacer uso de nuestros overlays";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -509,11 +527,11 @@
 				DEVELOPMENT_TEAM = 7J77M7XTN8;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Necesitamos la camara para que puedas hacer uso de nuestros overlays";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

@@ -1,10 +1,36 @@
 import SwiftUI
 
 struct PhotoCompDetailView: View {
+    
+    @ObservedObject var orientationManager = OrientationManager.shared
+    @State private var image: UIImage?
+    @State private var showCamera = false
+    
     var photoComp: PhotoComp
 
     var body: some View {
-        GeometryReader { reader in
+        CameraAccessView()
+           Group {
+               if orientationManager.orientation.isLandscape {
+                   // Tu vista de cámara aquí
+                   PhotoCompositionCameraView(overlayName: photoComp.overlay.first ?? "")
+               } else {
+                   // Otra vista para orientación vertical
+                   portraitView()
+               }
+           }
+           .onAppear {
+               UIDevice.current.beginGeneratingDeviceOrientationNotifications()
+           }
+           .onDisappear {
+               UIDevice.current.endGeneratingDeviceOrientationNotifications()
+           }
+       }
+}
+
+extension PhotoCompDetailView {
+    func portraitView() -> some View {
+        return GeometryReader { reader in
             let overlayWidth = reader.size.width - 30
             let overlayHeight = overlayWidth * (2/3)
             ScrollView {
@@ -21,12 +47,10 @@ struct PhotoCompDetailView: View {
                                 Image(overlay)
                                     .resizable()
                                     .scaledToFit()
-                                    .padding(.bottom)
                                     .background(Color.gray.opacity(0.3))
                                     // Aquí defines el tamaño de cada imagen directamente
                                     .frame(height: overlayHeight - 10)
                                     .cornerRadius(10)
-                                    .padding(EdgeInsets(top: 10, leading: 0, bottom: 10, trailing: 0))
                             }
                         }
                         .padding(.horizontal)
