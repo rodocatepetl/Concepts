@@ -35,3 +35,39 @@ Si estás interesado en contribuir al proyecto, ya sea mediante sugerencias, rep
 
 Esta aplicación fue desarrollada con fines educativos y de práctica personal en el campo de la fotografía y desarrollo de software. Parte del proceso de aprendizaje y desarrollo incluyó el uso de OpenAI's ChatGPT para obtener orientación y soluciones a problemas específicos de programación y diseño de la experiencia del usuario. Todo el contenido y las funcionalidades se crearon con un enfoque en proporcionar una herramienta útil y educativa para los entusiastas de la fotografía.
 
+# Photo Composition Practice App
+
+## Description
+
+This app is designed to provide photography enthusiasts with an interactive tool through which they can learn and practice various photo composition techniques right from their mobile device. Using a blend of theory and practice, users can explore different techniques, see examples of how they are applied in real photography, and then apply these concepts in real time using their device’s camera.
+
+## Features
+
+- **Exploration of Techniques**: A navigable list of photographic composition techniques, each with a detailed description and visual examples.
+- **Camera Mode with Overlay**: By rotating the device to landscape mode on the detail screen of a technique, the camera is automatically activated with a specific graphic overlay for that technique, guiding the user in composing their photos.
+- **Photo Capture and Saving**: Users can take photos with the active overlay, which are then saved to the device's camera roll for review and analysis.
+
+## How to Use
+
+1. **Explore Techniques**: Launch the app and browse through the list of photo composition techniques.
+2. **Learn and Observe**: Select a technique to read about it and view examples.
+3. **Practice**: Rotate your device to landscape mode on the detail screen to activate the camera mode. Use the overlay as a guide to compose your photos.
+4. **Capture and Save**: Take photos while using the overlay. These will automatically be saved to your camera roll.
+
+## Project Status
+
+This project is currently in development. We are working on adding more composition techniques, improving the user interface, and optimizing the camera experience with overlays.
+
+### How to Contribute
+
+If you are interested in contributing to the project, whether through suggestions, bug reporting, or code contributions, please feel free to create an issue or pull request on the GitHub repository.
+
+## Technologies Used
+
+- **SwiftUI**: For creating the user interface and navigation.
+- **UIKit**: Integration for specific camera functionalities not directly available in SwiftUI.
+- **AVFoundation**: For advanced camera control and image manipulation.
+
+## Disclaimer
+
+This application was developed for educational and personal practice purposes in the fields of photography and software development. Part of the learning and development process included using OpenAI's ChatGPT to get guidance and solutions to specific programming and user experience design issues. All content and functionalities were created with a focus on providing a useful and educational tool for photography enthusiasts.
