@@ -1,3 +1,5 @@
+#Español
+
 # App de Práctica de Composición Fotográfica
 
 ## Descripción
@@ -34,6 +36,8 @@ Si estás interesado en contribuir al proyecto, ya sea mediante sugerencias, rep
 ## Disclaimer
 
 Esta aplicación fue desarrollada con fines educativos y de práctica personal en el campo de la fotografía y desarrollo de software. Parte del proceso de aprendizaje y desarrollo incluyó el uso de OpenAI's ChatGPT para obtener orientación y soluciones a problemas específicos de programación y diseño de la experiencia del usuario. Todo el contenido y las funcionalidades se crearon con un enfoque en proporcionar una herramienta útil y educativa para los entusiastas de la fotografía.
+
+#English
 
 # Photo Composition Practice App
 
